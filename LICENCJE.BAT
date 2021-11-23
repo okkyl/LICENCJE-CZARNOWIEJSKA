@@ -14,7 +14,7 @@ echo.
 echo [95m
 echo H) Licencja HOME	P) Licencja PRO
 echo.
-echo Q) Wyjscie z OOBE
+echo.
 echo.
 echo.
 echo.[96m
@@ -22,7 +22,6 @@ set /p opcja=Wybierz:
 echo [0m
 if %opcja%==h goto installhome
 if %opcja%==p goto installpro
-if %opcja%==q goto exitoobe
 
 goto zly_wybor
 
@@ -53,7 +52,3 @@ MARXpress.exe
 net use * /delete
 pause
 goto menu
-
-:exitoobe
-net use * /delete
-C:\Windows\System32\Sysprep\sysprep.exe /oobe /shutdown

@@ -38,7 +38,6 @@ Z:
 cd Z:\Images\MARXpress_Windows_10_Home
 MARXpress.exe
 net use * /delete
-pause
 goto menu
 
 
@@ -53,7 +52,6 @@ Z:
 cd Z:\Images\MARXpress_Windows_10_Pro
 MARXpress.exe
 net use * /delete
-pause
 goto menu
 
 
@@ -82,7 +80,7 @@ echo.
 echo.
 echo.
 echo.
-pause
+net use * /delete
 goto menu
 
 :snappy
@@ -100,5 +98,5 @@ SDI_R2111.exe
 echo.
 echo.
 echo.
-pause
+net use * /delete
 goto menu

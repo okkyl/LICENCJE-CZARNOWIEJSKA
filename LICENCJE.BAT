@@ -23,6 +23,7 @@ echo [0m
 if %opcja%==h goto installhome
 if %opcja%==p goto installpro
 if %opcja%==r goto rent
+if %opcja%==s goto snappy
 goto menu
 
 
@@ -78,6 +79,24 @@ echo Instaluje Teams
 teams.exe /passive
 echo.
 echo.
+echo.
+echo.
+echo.
+pause
+goto menu
+
+:snappy
+cls
+echo [92m=======================================
+echo [93m SNAPPY
+echo [92m=======================================
+echo.[0m
+echo.
+echo.
+NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+Z:
+cd Z:\Images\Models\Snappy
+SDI_R2111.exe
 echo.
 echo.
 echo.

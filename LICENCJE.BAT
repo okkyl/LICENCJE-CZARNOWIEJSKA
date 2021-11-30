@@ -98,5 +98,6 @@ SDI_R2111.exe
 echo.
 echo.
 echo.
+pause
 net use * /delete
 goto menu

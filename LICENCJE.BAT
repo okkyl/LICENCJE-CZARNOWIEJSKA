@@ -65,14 +65,17 @@ echo.[0m
 echo.
 echo.
 echo.
+NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+Z:
+cd Z:\Programs\
 echo Instaluje LibreOffice
-%msi%\libre.msi /passive
+libre.msi /passive
 echo.
 echo Instaluje Chrome
-%msi%\chrome.msi /passive
+chrome.msi /passive
 echo.
 echo Instaluje Teams
-%msi%\teams.exe /passive
+teams.exe /passive
 echo.
 echo.
 echo.

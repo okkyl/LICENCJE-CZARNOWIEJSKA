@@ -14,7 +14,7 @@ echo.
 echo [95m
 echo h) Licencja HOME	p) Licencja PRO
 echo.
-echo                 r) RENT
+echo r) RENT          s) Snappy
 echo.
 echo.
 echo.[96m

@@ -45,7 +45,7 @@ NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\MARXpress_Windows_10_Home
 MARXpress.exe
-net use * /delete
+net use * /delete /y
 goto menu
 
 
@@ -59,7 +59,7 @@ NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\MARXpress_Windows_10_Pro
 MARXpress.exe
-net use * /delete
+net use * /delete /y
 goto menu
 
 
@@ -83,7 +83,7 @@ chrome.msi /passive
 echo.
 echo Instaluje Teams
 teams.exe /passive
-net use * /delete
+net use * /delete /y
 goto menu
 
 :snappy
@@ -98,5 +98,5 @@ NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\Models\Snappy
 SDI_R2111.exe
-net use * /delete
+net use * /delete /y
 goto menu

@@ -1,8 +1,8 @@
 @echo off
 
 :StartMon
-ping -n 6 -4 DESKTOP-L9VNISK > NUL
 echo Szukam Serwera
+ping -n 6 -4 DESKTOP-L9VNISK > NUL
 if not %ERRORLEVEL%==0 GOTO StartMon
 
 

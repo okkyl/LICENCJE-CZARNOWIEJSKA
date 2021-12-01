@@ -1,9 +1,11 @@
-rem :StartMon
-rem ping -n 6 -4 SERWER-01 > NUL
-rem if not %ERRORLEVEL%==0 GOTO StartMon
-
-
 @echo off
+
+:StartMon
+ping -n 6 -4 DESKTOP-L9VNISK > NUL
+if not %ERRORLEVEL%==0 GOTO StartMon
+
+
+
 :menu
 call variables.bat
 cls

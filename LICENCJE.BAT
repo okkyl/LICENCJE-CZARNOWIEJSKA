@@ -1,3 +1,8 @@
+rem :StartMon
+rem ping -n 6 -4 SERWER-01 > NUL
+rem if not %ERRORLEVEL%==0 GOTO StartMon
+
+
 @echo off
 :menu
 call variables.bat

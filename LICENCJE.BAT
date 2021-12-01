@@ -76,11 +76,6 @@ chrome.msi /passive
 echo.
 echo Instaluje Teams
 teams.exe /passive
-echo.
-echo.
-echo.
-echo.
-echo.
 net use * /delete
 goto menu
 
@@ -96,9 +91,5 @@ NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\Models\Snappy
 SDI_R2111.exe
-echo.
-echo.
-echo.
-pause
 net use * /delete
 goto menu

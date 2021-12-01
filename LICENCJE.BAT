@@ -41,7 +41,7 @@ echo [92m=======================================
 echo [93m LICENCJA HOME
 echo [92m=======================================
 echo.[0m
-NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\MARXpress_Windows_10_Home
 MARXpress.exe
@@ -55,7 +55,7 @@ echo [92m=======================================
 echo [93m LICENCJA PRO
 echo [92m=======================================
 echo.[0m
-NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\MARXpress_Windows_10_Pro
 MARXpress.exe
@@ -72,7 +72,7 @@ echo.[0m
 echo.
 echo.
 echo.
-NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Programs\
 echo Instaluje LibreOffice
@@ -94,7 +94,7 @@ echo [92m=======================================
 echo.[0m
 echo.
 echo.
-NET USE Z: "\\%serverip%" /user:%login% %password% /persistent:no
+NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\Models\Snappy
 SDI_R2111.exe

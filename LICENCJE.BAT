@@ -1,14 +1,13 @@
 @echo off
-
+call variables.bat
 :StartMon
 echo Szukam Serwera
-ping -n 6 -4 DESKTOP-L9VNISK > NUL
+ping -n 6 -4 %serverip% > NUL
 if not %ERRORLEVEL%==0 GOTO StartMon
 
 
 
 :menu
-call variables.bat
 cls
 echo [92m===========================================================
 echo [93m LICENCJOWIEJSKA

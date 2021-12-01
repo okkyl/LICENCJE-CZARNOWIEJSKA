@@ -1,3 +1,3 @@
-set serverip=DESKTOP-L9VNISK\Sources
-set login=Imager
-set password=ImageACT*73
+set serverip=NazwaSerwera\Sources
+set login=login
+set password=hasło

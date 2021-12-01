@@ -6,7 +6,7 @@ echo [92m===========================================================
 echo [93m LICENCJOWIEJSKA
 echo [92m===========================================================
 echo.[91m
-echo. Kmiecik Bartłomiej Czarnowiejska 2021
+echo. Kmiecik Bartlomiej Czarnowiejska 2021
 echo.
 echo.
 echo Program automatycznie mapuje i usuwa dysk sieciowy podczas wybrania opcji.

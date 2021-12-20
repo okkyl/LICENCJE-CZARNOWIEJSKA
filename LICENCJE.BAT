@@ -1,9 +1,9 @@
 @echo off
 call variables.bat
-:StartMon
+:ConnectScript
 echo Szukam Serwera
-ping -n 6 -4 %serverip% > NUL
-if not %ERRORLEVEL%==0 GOTO StartMon
+ping -n 3 -4 %serverip% > NUL
+if not %ERRORLEVEL%==0 GOTO ConnectScript
 
 
 

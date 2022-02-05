@@ -2,7 +2,7 @@
 call variables.bat
 :ConnectScript
 echo Szukam Serwera
-ping -n 3 -4 %serverip% > NUL
+ping -n 2 -4 %serverip% > NUL
 if not %ERRORLEVEL%==0 GOTO ConnectScript
 
 

@@ -17,6 +17,7 @@ echo. Kmiecik Bartlomiej Czarnowiejska 2021
 echo.
 echo.
 echo Program automatycznie mapuje i usuwa dysk sieciowy podczas wybrania opcji.
+systeminfo | findstr /B /C:"OS Name"
 echo.
 echo.
 echo [95m

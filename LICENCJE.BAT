@@ -114,6 +114,6 @@ echo.
 NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\Models\Crystal
-SDI_R2111.exe
+DiskInfo64.exe
 net use * /delete /y
 goto menu

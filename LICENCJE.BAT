@@ -24,7 +24,7 @@ echo h) Licencja HOME	p) Licencja PRO
 echo.
 echo r) RENT          s) Snappy
 echo.
-echo c) Crystal Disk  
+echo c) Crystal Disk  o) OCCT
 echo.
 echo.[96m
 set /p opcja=Wybierz:  
@@ -34,6 +34,7 @@ if %opcja%==p goto installpro
 if %opcja%==r goto rent
 if %opcja%==s goto snappy
 if %opcja%==c goto crystal
+if %opcja%==o goto occt
 goto menu
 
 
@@ -115,5 +116,20 @@ NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
 Z:
 cd Z:\Images\Models\Crystal
 DiskInfo64.exe
+net use * /delete /y
+goto menu
+
+:occt
+cls
+echo [92m=======================================
+echo [93m OCCT
+echo [92m=======================================
+echo.[0m
+echo.
+echo.
+NET USE Z: "\\%serverip%\Sources" /user:%login% %password% /persistent:no
+Z:
+cd Z:\Images\Models\Occt
+OCCT.exe
 net use * /delete /y
 goto menu

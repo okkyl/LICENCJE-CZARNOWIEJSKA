@@ -26,6 +26,8 @@ echo r) RENT          s) Snappy
 echo.
 echo c) Crystal Disk  o) OCCT
 echo.
+echo lic) PRZYPISZ LICENCJE /prepareimage
+echo.
 echo.[96m
 set /p opcja=Wybierz:  
 echo [0m
@@ -35,6 +37,7 @@ if %opcja%==r goto rent
 if %opcja%==s goto snappy
 if %opcja%==c goto crystal
 if %opcja%==o goto occt
+if %opcja%==lic goto lic
 goto menu
 
 
@@ -117,6 +120,18 @@ Z:
 cd Z:\Images\Models\Crystal
 DiskInfo64.exe
 net use * /delete /y
+goto menu
+
+:lic
+cls
+echo [92m=======================================
+echo [93m PREPAREIMAGE
+echo [92m=======================================
+echo.[0m
+echo.
+echo.
+C:\Recovery
+PrepareImage.bat
 goto menu
 
 :occt
